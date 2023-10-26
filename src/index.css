@@ -1,3 +1,50 @@
+#root {
+  padding: 0;
+  max-width: 100%;
+}
+
+#left, #center, #right {
+  width: 33%;
+  height: 98vh;
+  float: left;
+  margin: 0;
+}
+
+#footer {
+  min-height: 1em;
+  width: 100%;
+  background: #000;
+  border-top: 2px solid grey;
+}
+
+#footer a{
+  color: a0b4d4;
+  text-decoration: none;
+}
+
+#footer a:hover{
+  color: #326ce5;
+  scale: 1.2;
+}
+
+#left {
+  text-align: center;
+}
+
+/* debug */
+#left {
+  background: #0c0c0c;
+}
+
+#center {
+  background: #0c0c0c;
+  width: 34%;
+}
+
+#right {
+  background: #0c0c0c;
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -25,14 +72,14 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
+  padding: 0;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 2em;
   line-height: 1.1;
 }
 
@@ -58,12 +105,53 @@ button:focus-visible {
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #ffffff;
+    background-color: #a0b4d4;
   }
   a:hover {
     color: #747bff;
   }
   button {
-    background-color: #f9f9f9;
+    background-color: #a0b4d4;
   }
+}
+
+#clicker {
+  transition: transform .2s;
+}
+
+#clicker:hover {
+  transform: scale(1.2);  
+}
+
+.card {
+  padding: 0;
+  background: #0c0c0c;
+  display: flex; 
+  align-items: center; 
+  font-family: 'Ubuntu', sans-serif;
+  border: 2px solid #222;
+  
+}
+
+.card p{
+  color: #a0b4d4;
+}
+
+.cardTitle {
+  font-size: 1.5em;
+}
+
+.cardLogo {
+  width: 64px;
+  height: 64px;
+  padding: 0 30px;
+  transition: transform .2s;
+}
+
+.cardLogo:hover {
+  transform: scale(1.1);  
+}
+
+.padding-top-20em{
+  padding-top: 20em;
 }
